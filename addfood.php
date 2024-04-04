@@ -11,7 +11,7 @@ $fooddesc = $_POST['food_desc'];
 $foodinst = $_POST['food_inst'];
 $image = $_FILES['image']['name'];
 
-$imagePath = 'img/' . $image;
+$imagePath = 'upload/' . $image;
 $tmp_name = $_FILES['image']['tmp_name'];
 
 move_uploaded_file($tmp_name, $imagePath);
